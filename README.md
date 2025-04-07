@@ -34,6 +34,7 @@ Use Terraform main.tf file for automation in AWS
 Tool: Ansible
 
 Configured:
+
  docker installtion 
  
  jenkins installtion
@@ -66,9 +67,9 @@ prometheus_install.yml
 grafana_install.yml
 
 After installtion :
-                   ** http://<public-ip>:3000====>>Grafana**  ===>>Login: admin / admin
+                   http://<public-ip>:3000======>>Grafana  ===>>Login: admin / admin
 
-             **       http://<public-ip>:9090====>>prometheus**
+                   http://<public-ip>:9090====>>prometheus
 ------------------------------------------------------------------
 📦 Sample Application
 
