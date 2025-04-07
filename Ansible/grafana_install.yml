@@ -1,0 +1,35 @@
+---
+- name: Install Grafana on Amazon Linux 2
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Add Grafana YUM repository
+      yum_repository:
+        name: grafana
+        description: Grafana YUM repository
+        baseurl: https://packages.grafana.com/oss/rpm
+        gpgcheck: yes
+        repo_gpgcheck: yes
+        enabled: yes
+        gpgkey: https://packages.grafana.com/gpg.key
+
+    - name: Install Grafana
+      yum:
+        name: grafana
+        state: present
+
+    - name: Enable and start Grafana service
+      systemd:
+        name: grafana-server
+        enabled: yes
+        state: started
+
+    - name: Allow Grafana port 3000 in firewalld (optional)
+      firewalld:
+        port: 3000/tcp
+        permanent: yes
+        state: enabled
+        immediate: yes
+      when: ansible_facts['os_family'] == "RedHat"
+
