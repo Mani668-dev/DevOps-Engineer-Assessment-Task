@@ -49,9 +49,29 @@ Go to:
 http://<your-public-ip>:9090
 -----------------------------------------
 You should now see the Prometheus web UI.
-![Image](https://github.com/user-attachments/assets/48d31912-a97f-419f-91c0-b8d270fb15e5)
+![Image](https://github.com/user-attachments/assets/3a071f71-bb61-425b-80eb-bb36de96426e)
 ------------------------------------------------
 ![Image](https://github.com/user-attachments/assets/7cab160b-0b7c-442a-9e31-c4a4ba5ebaed)
+
+🎨 Grafana Setup
+📁 Step 1: Create a directory (name it as you wish)
+mkdir grafana
+cd grafana
+-------------------------------------------
+📄 Step 2: Copy the grafana_install.yml playbook into this folder
+-----------------------------------------------
+ansible-playbook grafana_install.yml
+-----------------------------------------
+🌐 Step 4: Access Grafana in your browser
+Open your browser
+http://<your-public-ip>:3000
+--------------------------------------------
+![Image](https://github.com/user-attachments/assets/3617b33f-fa92-4bed-b348-58a150b70b1b)
+--------------------------------------------
+![Image](https://github.com/user-attachments/assets/50dc04e6-bee3-4aa7-a320-bf03be129261)
+
+
+
 
 
 
