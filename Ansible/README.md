@@ -76,8 +76,11 @@ http://<your-public-ip>:3000
 Make sure you allow the following inbound ports in your EC2 security group:
 Port	Used For	Protocol	Description
 22	  SSH	          TCP	                  For Ansible to connect via SSH
+----------------------------------------------------------------------
 9090	Prometheus	  TCP	                 To access Prometheus UI
+-----------------------------------------------------------------------
 3000	Grafana	      TCP	                  To access Grafana dashboard
+-----------------------------------------------------------------------------
 
 
 
