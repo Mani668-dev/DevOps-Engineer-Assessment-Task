@@ -1,0 +1,65 @@
+---
+# Install Git
+- name: Install Git
+  yum:
+    name: git
+    state: latest
+
+# Enable Docker in Amazon Linux Extras
+- name: Enable Docker in Amazon Linux Extras
+  command: amazon-linux-extras enable docker
+
+# Install Docker
+- name: Install Docker
+  yum:
+    name: docker
+    state: present
+
+# Update all packages
+- name: Update all packages
+  yum:
+    name: "*"
+    state: latest
+
+# Start Docker service
+- name: Start and enable Docker
+  systemd:
+    name: docker
+    state: started
+    enabled: yes
+
+# Update system packages
+- name: Yum update
+  command: yum update -y
+
+# Add Jenkins repository
+- name: Add Jenkins repository
+  command: wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+# Import Jenkins GPG key
+- name: Import Jenkins GPG key
+  command: rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+# Upgrade system packages again
+- name: Yum upgrade
+  command: yum upgrade -y
+
+# Install Java 17 (Amazon Corretto)
+- name: Install Java 17
+  command: yum install java-17-amazon-corretto -y
+
+# Install Jenkins
+- name: Install Jenkins
+  command: yum install jenkins -y
+
+# Enable and start Jenkins
+- name: Enable Jenkins
+  systemd:
+    name: jenkins
+    enabled: yes
+
+- name: Start Jenkins
+  systemd:
+    name: jenkins
+    state: started
+

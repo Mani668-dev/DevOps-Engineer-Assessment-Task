@@ -1,0 +1,8 @@
+---
+- name: Setup DevOps Tools (Git, Docker, Jenkins)
+  hosts: all
+  become: yes
+
+  roles:
+    - devops_tools
+
