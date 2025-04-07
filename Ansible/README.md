@@ -51,7 +51,7 @@ http://<your-public-ip>:9090
 You should now see the Prometheus web UI.
 ![Image](https://github.com/user-attachments/assets/48d31912-a97f-419f-91c0-b8d270fb15e5)
 ------------------------------------------------
-![Image](https://github.com/user-attachments/assets/3b875c69-781c-470f-87b5-813426a535ed)
+![Image](https://github.com/user-attachments/assets/7cab160b-0b7c-442a-9e31-c4a4ba5ebaed)
 
 
 
