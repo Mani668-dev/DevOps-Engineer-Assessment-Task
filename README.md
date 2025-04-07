@@ -59,6 +59,7 @@ Docker images used for consistent environment
 -----------------------------------------------------------
 Monitoring & Logging
 Tool: Prometheus + Grafana (Open-source stack)
+
 Setup: using  ansible playbooks you can automation will be done 
 
 prometheus_install.yml
