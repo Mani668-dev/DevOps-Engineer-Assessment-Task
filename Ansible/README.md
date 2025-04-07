@@ -43,4 +43,4 @@ Open your browser
 Go to:
 http://<your-public-ip>:9090
 You should now see the Prometheus web UI.
-![image](C:\Users\mani0\OneDrive\Pictures\promthous.jpg)
+![Image](https://github.com/user-attachments/assets/48d31912-a97f-419f-91c0-b8d270fb15e5)
