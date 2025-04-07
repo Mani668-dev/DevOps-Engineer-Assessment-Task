@@ -137,7 +137,7 @@ terraform destroy
 
 ✅  SSH Key Security
 
-✅ Parallel deployment to AWS + IBM
+✅ deployment to AWS
 
 ✅ Auto-scaling-ready architecture
 
