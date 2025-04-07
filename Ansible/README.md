@@ -32,15 +32,26 @@ Install Prometheus & Grafana using Ansible
 
 🔧 Prometheus Setup
 📁 Step 1: Create a directory (name it as you like)
+---------------------------------------------------
 mkdir prometheus
 cd prometheus
+--------------------------------
 📄 Step 2: Copy the prometheus_install.yml playbook into this folder
+-------------------------------
 ▶️ Step 3: Run the playbook
 ansible-playbook prometheus_install.yml
+-----------------------------------
 This will install and start Prometheus automatically.
+--------------------------------------
 🌐 Step 4: Access Prometheus
 Open your browser
 Go to:
 http://<your-public-ip>:9090
+-----------------------------------------
 You should now see the Prometheus web UI.
 ![Image](https://github.com/user-attachments/assets/48d31912-a97f-419f-91c0-b8d270fb15e5)
+------------------------------------------------
+![Image](https://github.com/user-attachments/assets/3b875c69-781c-470f-87b5-813426a535ed)
+
+
+
