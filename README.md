@@ -16,11 +16,15 @@ NOTE : READ ME files also provided in sub Floders
 🎯 Key Features
 -------------------------------------------------------
 1. 🧱 Infrastructure as Code (IaC)
+
 Tool: Terraform
+
 Clouds: AWS
+
 Resources Provisioned:
 
 EC2 instance (AWS)
+
 VPC/Subnet/Firewall/Security Groups 
 
 Use Terraform main.tf file for automation in AWS
@@ -31,15 +35,20 @@ Tool: Ansible
 
 Configured:
  docker installtion 
+ 
  jenkins installtion
+ 
  git installtion
+ 
  
  All  installtion automation scripts available in devops tools and site.yml file 
  Using this scripts  you can automate.
  ----------------------------------------------------------------
  3. 🚀 CI/CD Pipeline
  Tool:  Jenkins
+
  Pipeline Flow:
+ 
  Triggers on push to master branch
 
 Builds and tests application
@@ -55,16 +64,21 @@ Setup: using  ansible playbooks you can automation will be done
 prometheus_install.yml
 grafana_install.yml
 
-After installtion : http://<public-ip>:3000 ===>>Grafana  ===Login: admin / admin
+After installtion :
+                    http://<public-ip>:3000 ===>>Grafana   ===>>Login: admin / admin
+
                     http://<public-ip>:9090====>>prometheus
 ------------------------------------------------------------------
 📦 Sample Application
 
 Simple web app displaying:
+
 Hello, Paper.Social!
 
 Can be built using: 
+
   Web server : NGINX (static)
+  
   code : HTML
 -------------------------------
 Deploy with CI/CD
@@ -79,7 +93,7 @@ App is built & deployed to AWS
 ---------------------------------
  Access Application
 
-AWS: http://<aws-public-ip>
+AWS: http://<<aws-public-ip>>
 
 
 --------------------------------------------
@@ -89,15 +103,20 @@ Assumptions & Design Decisions
 
 Infrastructure kept minimal to control cost
 
+
 Dockerized for environment consistency
+
 
 Logs and metrics collected centrally
 
+
 Configured SSH + firewall rules per cloud best practices
+
 
 Cost & Security Considerations
 -------------------------
 Allowed only required inbound ports
+
 
 Docker runs as non-root where applicable
 
@@ -107,6 +126,7 @@ terraform destroy
 ----------------------------
 
 ✅ Bonus Features Implemented
+
 
 ✅  SSH Key Security
 
