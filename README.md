@@ -1,7 +1,9 @@
 🛠️ DevOps Engineer Assessment – Paper.Social
 
 Role: DevOps Engineer & AWS
+
 Company: Paper.Social
+
 Objective: Design and automate a multi-cloud deployment pipeline using AWS
 ---------------------------------------------------------------------------------
 
