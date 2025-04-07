@@ -14,8 +14,9 @@ Paper.Social is developing a modern social media platform using multi-cloud infr
 NOTE : READ ME files also provided in sub Floders
 -------------------------------------------------
 🎯 Key Features
--------------------------------------------------------
+
 1. 🧱 Infrastructure as Code (IaC)
+-------------------------------------------------------
 
 Tool: Terraform
 
@@ -28,8 +29,9 @@ EC2 instance (AWS)
 VPC/Subnet/Firewall/Security Groups 
 
 Use Terraform main.tf file for automation in AWS
----------------------------------------------------------
+
 2. ⚙️ Configuration Management
+  ------------------------------------------------------
 
 Tool: Ansible
 
@@ -44,8 +46,9 @@ Configured:
  
  All  installtion automation scripts available in devops tools and site.yml file 
  Using this scripts  you can automate.
- ----------------------------------------------------------------
+
  3. 🚀 CI/CD Pipeline
+----------------------------------------------------------------------------------------
  Tool:  Jenkins
 
  Pipeline Flow:
@@ -57,8 +60,9 @@ Builds and tests application
 Deploys to AWS
 
 Docker images used for consistent environment
------------------------------------------------------------
+
 Monitoring & Logging
+------------------------------------------------------
 Tool: Prometheus + Grafana (Open-source stack)
 
 Setup: using  ansible playbooks you can automation will be done 
@@ -70,9 +74,9 @@ After installtion :
                    http://<public-ip>:3000======>>Grafana  ===>>Login: admin / admin
 
                    http://<public-ip>:9090====>>prometheus
-------------------------------------------------------------------
-📦 Sample Application
 
+📦 Sample Application
+------------------------------------------------------------------
 Simple web app displaying:
 
 Hello, Paper.Social!
@@ -82,9 +86,9 @@ Can be built using:
   Web server : NGINX (static)
   
   code : HTML
--------------------------------
-**Deploy with CI/CD**
 
+**Deploy with CI/CD**
+-------------------------------
 
 Push code to master branch
 
@@ -92,14 +96,13 @@ Pipeline triggers automatically
 
 App is built & deployed to AWS
 
----------------------------------
+
  Access Application
+ ---------------------------------
+**
+ AWS EC2 : <<public-IP>>**
 
- 
-**AWS: http://<<aws-public-ip>>**
 
-
---------------------------------------------
 
 Assumptions & Design Decisions
 ------------------------------
