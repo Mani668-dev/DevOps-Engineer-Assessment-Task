@@ -83,7 +83,7 @@ Can be built using:
   
   code : HTML
 -------------------------------
-Deploy with CI/CD
+**Deploy with CI/CD**
 
 
 Push code to master branch
@@ -95,6 +95,7 @@ App is built & deployed to AWS
 ---------------------------------
  Access Application
 
+ 
 **AWS: http://<<aws-public-ip>>**
 
 
