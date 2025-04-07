@@ -100,7 +100,7 @@ App is built & deployed to AWS
  Access Application
  ---------------------------------
 **
- AWS EC2 : <<public-IP>>**
+ AWS EC2:---public-IP ---
 
 
 
