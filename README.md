@@ -65,9 +65,9 @@ prometheus_install.yml
 grafana_install.yml
 
 After installtion :
-                    http://<public-ip>:3000 ===>>Grafana   ===>>Login: admin / admin
+                   ** http://<public-ip>:3000====>>Grafana**  ===>>Login: admin / admin
 
-                    http://<public-ip>:9090====>>prometheus
+             **       http://<public-ip>:9090====>>prometheus**
 ------------------------------------------------------------------
 📦 Sample Application
 
@@ -93,7 +93,7 @@ App is built & deployed to AWS
 ---------------------------------
  Access Application
 
-AWS: http://<<aws-public-ip>>
+**AWS: http://<<aws-public-ip>>**
 
 
 --------------------------------------------
@@ -123,9 +123,10 @@ Docker runs as non-root where applicable
 🪯 Cleanup
 ------------
 terraform destroy  
-----------------------------
 
-✅ Bonus Features Implemented
+
+ Bonus Features Implemented
+-------------------------------------
 
 
 ✅  SSH Key Security
